@@ -10,7 +10,7 @@ docker build -t onnx -f Dockerfile .
 It will take some time, after it finishes you should have an image tagged "onnx"
 
 
-To extract a weel file from the image, execute following command:
+To extract the wheel file from the image, execute following command:
 ````
 docker run --rm onnx tar -cC /workspace/onnxruntime/build/Linux/Release/dist/ *.whl | tar -xvC ./
 ````
